@@ -30,6 +30,8 @@ include $(THEOS_MAKE_PATH)/library.mk
 
 # Rootless support? with a question mark
 
+TestyMcTestFace_FRAMEWORKS = UIKit
+
 ifeq ($(ROOTLESS),1)
 $(LIBRARY_NAME)_CFLAGS += -DJINX_ROOTLESS
 DYLIB_PATH = $(THEOS_STAGING_DIR)/Library/MobileSubstrate/DynamicLibraries/$(LIBRARY_NAME).dylib
