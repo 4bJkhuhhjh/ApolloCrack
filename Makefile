@@ -22,6 +22,8 @@ include $(THEOS_MAKE_PATH)/aggregate.mk
 
 # Rootless support? with a question mark
 
+TestyMcTestFace_FRAMEWORKS = UIKit
+
 ifeq ($(ROOTLESS),1)
 internal-stage::
 	@$(PRINT_FORMAT_MAKING) "Moving files to rootless paths"
